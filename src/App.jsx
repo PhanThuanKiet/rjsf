@@ -42,7 +42,7 @@ const handleSubmit = async ({ formData }) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/submit", // Đổi URL API nếu cần
+      "https://svrjsf.onrender.com/submit", 
       formData
     );
     console.log("Dữ liệu đã được lưu vào MongoDB:", response.data);
